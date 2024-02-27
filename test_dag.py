@@ -17,14 +17,14 @@ with DAG(dag_id='test_dag',
         start_date=datetime(2021, 1, 1),
         schedule_interval=None,
         catchup=False,
-        tags=['']
+        tags=['test']
 ):
 
     start = EmptyOperator(task_id='start')
 
     @task
     def task_1():
-        return ''
+        return 'Task 1 complete.'
 
     end = EmptyOperator(task_id='end')
 
