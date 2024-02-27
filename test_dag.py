@@ -15,7 +15,7 @@ with DAG(dag_id='test_dag',
         default_args=default_args,
         description='This is a test DAG',
         start_date=datetime(),
-        schedule_interval='',
+        schedule_interval=None,
         catchup=False,
         tags=['']
 ):
