@@ -3,7 +3,7 @@ from airflow.decorators import task
 from airflow.operators.empty import EmptyOperator
 from datetime import datetime, timedelta 
 
-dag_owner = ''
+dag_owner = 'cvkenneally'
 
 default_args = {'owner': dag_owner,
         'depends_on_past': False,
