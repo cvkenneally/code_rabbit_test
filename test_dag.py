@@ -13,7 +13,7 @@ default_args = {'owner': dag_owner,
 
 with DAG(dag_id='test_dag',
         default_args=default_args,
-        description='',
+        description='This is a test DAG',
         start_date=datetime(),
         schedule_interval='',
         catchup=False,
