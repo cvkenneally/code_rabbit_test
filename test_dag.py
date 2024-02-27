@@ -11,7 +11,7 @@ default_args = {'owner': dag_owner,
         'retry_delay': timedelta(minutes=5)
         }
 
-with DAG(dag_id='',
+with DAG(dag_id='test_dag',
         default_args=default_args,
         description='',
         start_date=datetime(),
